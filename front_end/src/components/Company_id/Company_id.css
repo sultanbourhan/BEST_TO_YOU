@@ -1,0 +1,560 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-color: #3e7dff; /* تعريف المتغير */
+    --da-color: #d9e5ff;
+    --sec-color: #fff;
+    --li-color: #fff;
+    --li-blor_color: #ffffff51;
+    --text-color: #080321;
+    --header-color: #ffffff90;
+    --box-color: #ddd;
+  }
+  
+  .root_da {
+    --main-color: #3e7dff; /* تعريف المتغير */
+    --da-color: #080322;
+    --li-color: #121b4d;
+    --sec-color: #1f2333;
+    --li-blor_color: #121b4d51;
+    --text-color: #fff;
+    --header-color: #090e51a3;
+    --box-color: #101012;
+  }
+  
+  body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width:667px){
+      .container {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+  }
+  
+  .company {
+    background: var(--sec-color);
+  
+  }
+  
+  .shit{
+      padding: 50px 0;
+  }
+  
+  .company .profilcom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--sec-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(--box-color);
+  }
+
+ 
+  
+  .company .profilcom .test {
+    display: flex;
+    position: relative;
+  }
+
+  
+  @media (max-width:991px){
+      .company .profilcom .test {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+  }
+  
+  
+  .company .profilcom .test img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  .company .profilcom .test .img_lo{
+    position: absolute;
+    width: 80px ;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--sec-color);
+    top: 5px;
+    right: 5px;
+  }
+  @media (max-width:991px){
+      .company .profilcom .test img {
+          width: 100%;
+          order: 0;
+        }
+  }
+  
+  .company .profilcom .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @media (max-width:991px){
+      .company .profilcom .info {
+  order: 1;
+        }
+  }
+  
+  
+  
+  .company .profilcom .info .infosection {
+  }
+  .company .profilcom .info .infosection h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid;
+      padding-bottom: 15px;
+      width: fit-content;
+  }
+  .company .profilcom .info .infosection ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  @media (max-width:667px){
+      .company .profilcom .info .infosection ul {
+          flex-direction: column;
+        }
+  }
+  
+  .company .profilcom .info .infosection li {
+    color: var(--text-color);
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    width: calc(50% - 10px);
+  }
+  
+  @media (max-width:667px){
+      .company .profilcom .info .infosection li {
+  width: 100%;
+        }
+  }
+  
+  .company .dec {
+    font-size: 19px;
+    background: var(--sec-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(--box-color);
+    display: flex;
+    gap: 20px;
+  }
+  
+  .company .dec p {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.4;
+  }
+  
+  .company .profilcom .info .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .company .profilcom .info .icon .stars {
+    color: gold;
+  }
+  
+  .company .profilcom .info .icon .media {
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+  }
+  
+  .company .profilcom .info .icon .media svg {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 25px;
+    transition: 0.3s;
+  }
+  
+  .company .profilcom .info .icon .media .faFacebook:hover {
+      color: #3b5998;
+  }
+  .company .profilcom .info .icon .media .faInstagram:hover {
+      color: #e4405f;
+  }
+  .company .profilcom .info .icon .media .faLinkedin:hover {
+      color: #0077b5;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .add{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 40px;
+      padding:20px 0;
+  }
+  
+  .add .adver{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 20px;
+      position: relative;
+      background-color: var(--sec-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px var(--box-color);
+  }
+  
+  .add .adver .company{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      width: fit-content;
+  }
+  .add .adver .company img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
+  .add .adver .company .name{
+  
+  }
+  
+  .add .adver .company .name h1{
+      color: var(--text-color);
+  }
+  
+  .add .adver .company .name span{
+      color: #919297;
+  }
+  
+  
+  
+  .add .adver .advercompany{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  
+  
+  .add .adver .advercompany .des{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .add .adver .advercompany .des h2{
+  color: var(--text-color);
+  }
+  
+  .add .adver .advercompany .des p{
+      padding-bottom: 20px;
+      color: var(--text-color);
+      line-height: 1.4;
+  }
+  
+  
+  .add .adver .advercompany .imagescomapny {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      background-color: var(--sec-color);
+  }
+  
+  .add .adver .advercompany .imagescomapny img {
+      width: calc(50% - 5px); /* عرض 50% عند وجود أكثر من صورة */
+  }
+  
+  /* عرض الصورة بالكامل عند وجود صورة واحدة فقط */
+  .add .adver .advercompany .imagescomapny img:only-child {
+      width: 100%; /* عرض الصورة بالكامل */
+  }
+  
+  
+  
+  .add .adver .advercompany .likes{
+      margin-top: 10px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--box-color);
+      font-weight: bold;
+      font-size: 20px;
+      color: var(--box-color);
+      margin-top: auto;
+  }
+  .add .adver .advercompany .likes p{
+      color: var(--text-color);
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  
+  .add .adver .advercompany .likes p:hover{
+      color: var(--main-color);
+  }
+  .add .adver .advercompany .likes p > i{
+  
+  }
+  .add .adver .advercompany .likes span{
+      color: var(--text-color);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* header{
+      position: relative;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+  }
+  header h1{
+      color: var(--text-color );
+      font-size: 45px;
+      font-weight: 900;
+  }
+  header h1 > span{
+      -webkit-text-stroke: 2px var(--main-color);
+      -webkit-text-fill-color: transparent;
+  } 
+  .menu{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+  }
+  .menu ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+  }
+  ul li a{
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text-color);
+  }
+  
+  header .singin{
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 600;
+      color:white;
+      background-color:  var(--main-color);
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  header .singin a{
+      font-weight: 600;
+      color:white;
+      text-decoration: none;
+  } */
+  
+  /* --------------------------------------------- */
+  /* From Uiverse.io by andrew-demchenk0 */ 
+  .switch {
+      font-size: 17px;
+      position: relative;
+      display: inline-block;
+      width: 64px;
+      height: 34px;
+    }
+    
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .sliderr {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--main-color);
+      transition: .4s;
+      border-radius: 30px;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .sliderr:before {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 30px;
+      border-radius: 20px;
+      left: 2px;
+      bottom: 2px;
+      z-index: 2;
+      background-color: #e8e8e8;
+      transition: .4s;
+    }
+    
+    .sun svg {
+      position: absolute;
+      top: 6px;
+      left: 36px;
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    
+    .moon svg {
+      fill: #73C0FC;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    
+    /* .switch:hover */.sun svg {
+      animation: rotate 15s linear infinite;
+    }
+    
+    @keyframes rotate {
+     
+      0% {
+        transform: rotate(0);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    /* .switch:hover */.moon svg {
+      animation: tilt 5s linear infinite;
+    }
+    
+    @keyframes tilt {
+     
+      0% {
+        transform: rotate(0deg);
+      }
+    
+      25% {
+        transform: rotate(-10deg);
+      }
+    
+      75% {
+        transform: rotate(10deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .input:checked + .sliderr {
+      background-color: var(--text-color );
+    }
+    
+    .input:focus + .sliderr {
+      box-shadow: 0 0 1px #183153;
+    }
+    
+    .input:checked + .sliderr:before {
+      transform: translateX(30px);
+    }
+  
+  
+    .scrolled{
+      background-color: var(--header-color);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(10px);
+    }
+  
+  
+  
+  /* ============================================== */
+
+  
+
+  
+  
+  
+  
+  

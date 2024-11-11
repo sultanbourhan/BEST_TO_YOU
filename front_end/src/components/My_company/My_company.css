@@ -1,0 +1,139 @@
+/* :root {
+  --main-color: #3e7dff; 
+  --da-color: #d9e5ff;
+  --sec-color: #fff;
+  --li-color: #fff;
+  --li-blor_color: #ffffff51;
+  --text-color: #080321;
+  --header-color: #ffffff90;
+  --box-color: #ddd;
+}
+
+.root_da {
+  --main-color: #3e7dff;
+  --da-color: #080322;
+  --li-color: #121b4d;
+  --sec-color: #1f2333;
+  --li-blor_color: #121b4d51;
+  --text-color: #fff;
+  --header-color: #090e51a3;
+  --box-color: #101012;
+} */
+
+.dec_com {
+  display: flex;
+  gap: 20px;
+}
+
+.dec_com .dec {
+  display: block;
+  flex: 1;
+}
+
+.add > h1 {
+  grid-column: span 2;
+}
+
+.dec_com .dec:nth-child(2) {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dec_com .dec:nth-child(2) .star-rating{
+  margin-top: 10px;
+}
+
+.dec_com .dec:nth-child(2) .scrol {
+  overflow-y: scroll;
+  height: 350px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.dec_com .dec:nth-child(2) .create_comment {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.dec_com .dec:nth-child(2) .create_comment svg{
+  transition: 0.3s;
+}
+
+.dec_com .dec:nth-child(2) .create_comment svg:hover {
+  transform: scale(1.1);
+  color: var(--main-color);
+}
+.dec_com .dec:nth-child(2) .create_comment p{
+  position: absolute;
+    bottom: 0;
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.dec_com .dec:nth-child(2) .create_comment img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dec_com .dec:nth-child(2) .create_comment input{
+  flex: 1;
+  box-shadow: 0 2px 8px var(--box-color);
+  border-radius: 20px;
+  border: none;
+  padding: 5px 40px 5px 15px;
+  font-size: 18px;
+  background-color: var(--sec-color);
+  color: var(--text-color);
+}
+.dec_com .dec:nth-child(2) .create_comment input:focus{
+  outline: none;
+}
+
+/* تخصيص شريط التمرير */
+.dec_com .dec:nth-child(2) .scrol::-webkit-scrollbar {
+  width: 10px; /* عرض شريط التمرير */
+  height: 12px; /* طول شريط التمرير */
+}
+.dec_com .dec:nth-child(2) .scrol::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* لون المقبض */
+  border-radius: 10px; /* زوايا المقبض المستديرة */
+  border: 3px solid var(--sec-color); 
+}
+.dec_com .dec:nth-child(2) .scrol::-webkit-scrollbar-track {
+  background: var(--sec-color); /* لون مسار شريط التمرير */
+  border-radius: 10px; /* زوايا المسار المستديرة */
+  box-shadow: 0 2px 8px var(--box-color);/* إضافة ظل داخلي */
+}
+
+.dec_com .dec:nth-child(2) .scrol .comment {
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 2px 8px var(--box-color);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.dec_com .dec:nth-child(2) .scrol .comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dec_com .dec:nth-child(2) .scrol .comment .commint_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dec_com .dec:nth-child(2) .scrol .comment .commint_text p:nth-child(1) {
+  font-weight: 600;
+}
